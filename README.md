@@ -39,11 +39,11 @@ To provide personalized internship preparation guidance for students.
 
 ## 📸 Screenshots
 
-### Home Page
+### Home
 ![Home](screenshots/home.png)
 
-### Upload Resume
+### Resume
 ![Resume](screenshots/resume.png)
 
-### Roadmap Output
+### Roadmap
 ![Roadmap](screenshots/roadmap.png)

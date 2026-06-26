@@ -42,8 +42,8 @@ To provide personalized internship preparation guidance for students.
 ### Home Page
 ![Home](screenshots/home.png)
 
-### Resume Guidance
-![Resume](screenshots/upload.png)
+### Upload Resume
+![Resume](screenshots/resume.png)
 
-### Internship Roadmap
+### Roadmap Output
 ![Roadmap](screenshots/roadmap.png)

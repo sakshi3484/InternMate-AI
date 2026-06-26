@@ -36,3 +36,14 @@ To provide personalized internship preparation guidance for students.
 
 ## 🚀 Live Demo
 [Click here to try InternMate AI](https://internmate-ai-byethpdtmcrvdf5ctr4fro.streamlit.app/)
+
+## 📸 Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
+
+### Resume Guidance
+![Resume](screenshots/upload.png)
+
+### Internship Roadmap
+![Roadmap](screenshots/roadmap.png)

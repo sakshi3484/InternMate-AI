@@ -84,16 +84,15 @@ Give practical, structured, beginner-friendly guidance.
 Use headings and bullet points.
 """
 
+    
 
+try:
+    response = model.generate_content(prompt)
 
-    try:
-        response = model.generate_content(prompt)
-
-        if response and response.candidates:
-            st.success("Your Personalized Guidance")
-            st.write(response.text)
-        else:
-            st.error("Gemini returned no response.")
-
-    except Exception as e:
-        st.error(f"Gemini Error: {e}")
+    if response and response.candidates:
+        st.success("Your Personalized Guidance")
+        st.write(response.text)
+    else:
+        st.error("No response from Gemini. Try again later.")
+except Exception as e:
+ st.error("Gemini is busy or rate-limited. Please wait and try again.")

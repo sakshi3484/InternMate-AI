@@ -59,6 +59,7 @@ option = st.selectbox(
 )
 
 # ---------------- Generate Button ----------------
+
 if st.button("Generate Plan 🚀"):
 
     if not name or not skills or not goal:
@@ -84,15 +85,16 @@ Give practical, structured, beginner-friendly guidance.
 Use headings and bullet points.
 """
 
-    
+    st.write("Sending request to Gemini...")
 
-try:
-    response = model.generate_content(prompt)
+    try:
+        response = model.generate_content(prompt)
 
-    if response and response.candidates:
-        st.success("Your Personalized Guidance")
-        st.write(response.text)
-    else:
-        st.error("No response from Gemini. Try again later.")
-except Exception as e:
- st.error("Gemini is busy or rate-limited. Please wait and try again.")
+        if response and response.candidates:
+            st.success("Your Personalized Guidance")
+            st.write(response.text)
+        else:
+            st.warning("No response received. Try again later.")
+
+    except Exception as e:
+        st.error("Gemini is busy or rate-limited. Please wait and try again.")
